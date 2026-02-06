@@ -5,7 +5,7 @@
 <h1 align="center">Superdense Trading</h1>
 
 <p align="center">
-  <b>Quantitative Trading • Market Analysis • Algorithmic Strategies</b>
+  <b>Quantitative Trading • Market Analysis • Algorithmic Strategies • Quantum Advantage • Portfolio Optimization</b>
 </p>
 
 <p align="center">
