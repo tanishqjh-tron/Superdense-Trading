@@ -37,10 +37,10 @@ Technical Architecture: Employs a hybrid stack: Python for rapid development, qu
 
 ## Educational Impact: 
 
-Provides an accessible platform for learning quantum finance, bridging theoretical algorithms and practical trading applications.
+• Provides an accessible platform for learning quantum finance, bridging theoretical algorithms and practical trading applications.
 
-### Standout Factor: Production-ready quantum trading simulator demonstrating measurable performance improvements over classical methods.
+• Standout Factor: Production-ready quantum trading simulator demonstrating measurable performance improvements over classical methods.
 
-### Target: Aspiring quants, quantum computing students, and financial researchers seeking cutting-edge tools.
+• Target: Aspiring quants, quantum computing students, and financial researchers seeking cutting-edge tools.
 
-### Status: Actively developed with roadmap for quantum hardware integration and advanced algorithm implementation.
+• Status: Actively developed with roadmap for quantum hardware integration and advanced algorithm implementation.
