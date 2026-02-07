@@ -1,0 +1,620 @@
+# =========================================================
+# SUPERDENSE TRADING - HYBRID (Python + Rust + Qiskit)
+# =========================================================
+
+# ==================== PROJECT-SPECIFIC ====================
+
+# Trading data and sensitive information
+*.csv              # Large market data files
+*.parquet          # Market data files
+*.feather          # Market data files
+*.h5               # HDF5 data files
+*.hdf5             # HDF5 data files
+*.pkl              # Pickle files (can be large)
+*.pickle           # Pickle files
+*.json.gz          # Compressed data files
+*.zip              # Compressed data files
+*.tar.gz           # Compressed data files
+market_data/       # Directory for downloaded market data
+data/              # Generated/sensitive data
+secrets/           # API keys and secrets
+.env               # Environment variables
+.env.local         # Local environment variables
+.env.*             # Other environment files
+config.local.*     # Local configuration files
+api_keys.*         # API key files
+credentials.*      # Credential files
+*.log              # Log files
+logs/              # Log directories
+
+# Quantum simulator caches and results
+quantum_results/   # Generated quantum computation results
+circuit_cache/     # Cached quantum circuits
+*.qasm             # Quantum assembly files (can be regenerated)
+*.qobj             # Qiskit job objects
+quantum_jobs/      # Quantum job results
+simulation_results/ # Simulation outputs
+
+# Backtesting results
+backtest_results/  # Generated backtest outputs
+performance_metrics/  # Calculated metrics
+portfolio_snapshots/  # Portfolio snapshots
+trade_history/     # Trade history dumps
+reports/           # Generated reports
+analysis_output/   # Analysis outputs
+
+# ==================== PYTHON ====================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+.pybuilder/
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# poetry
+poetry.lock
+
+# pdm
+.pdm.toml
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# Pyre type checker
+.pyre/
+
+# pytype static type analyzer
+.pytype/
+
+# Cython debug symbols
+cython_debug/
+
+# Profiling data
+.prof
+profiles/
+flamegraph/
+
+# ==================== RUST ====================
+
+# Compiled files
+/target/
+**/*.rs.bk
+**/*.rlib
+*.dll
+*.so
+*.dylib
+*.pyd
+
+# Debug symbols
+*.pdb
+*.ilk
+*.dSYM/
+*.dSYM/**
+
+# Coverage and profiling
+/target/coverage/
+profiling/
+flamegraph.svg
+profile_data/
+
+# Rust-analyzer
+rust-analyzer/
+
+# Backup files from rustfmt
+**/*.rs.bk
+
+# Maturin builds
+*.egg-info/
+*.egg
+dist/
+build/
+wheelhouse/
+
+# NOTE: Cargo.lock SHOULD BE COMMITTED for binary/extension projects
+# Cargo.lock is NOT ignored - keep it in version control
+
+# ==================== QISKIT & QUANTUM ====================
+
+# Qiskit job results
+qiskit_jobs/
+*.qobj
+job_*.json
+quantum_backends/
+
+# Quantum simulator outputs
+*.qasm
+*.quil
+*.qprog
+*.qsharp
+*.qs
+
+# IBM Quantum Experience credentials
+ibmq_credentials.yaml
+qiskitrc
+*.json (if containing tokens)
+
+# PennyLane
+.pennylane/
+
+# ==================== DATABASES ====================
+
+# SQLite
+*.db
+*.sqlite
+*.sqlite3
+database/
+
+# ==================== DOCKER ====================
+
+# Docker
+docker-compose.override.yml
+docker-compose.*.yml
+.docker/
+
+# ==================== OPERATING SYSTEM ====================
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Windows
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+
+# ==================== IDEs & EDITORS ====================
+
+# VS Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/snippets/
+*.code-workspace
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+target/
+
+# PyCharm
+.idea/
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/dictionaries
+.idea/shelf
+
+# CLion
+.cache/
+.clang-tidy
+.clangd/
+compile_commands.json
+cmake-build-*/
+cmake-build-*/
+out/
+CMakeLists.txt.user
+*.layout
+*.workspace
+
+# RustRover
+.idea/
+.idea/rustrover.xml
+.idea/modules.xml
+.idea/workspace.xml
+.idea/vcs.xml
+.idea/shelf/
+.idea/dictionaries/
+.idea/scopes/
+.idea/runConfigurations/
+*.iws
+*.iml
+*.ipr
+.rslib/
+.rr/
+target/
+
+# Sublime Text
+*.sublime-workspace
+*.sublime-project
+sublime/
+
+# Vim
+.*.swp
+.*.swo
+*~
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+*.un~
+Session.vim
+.netrwhist
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# Visual Studio
+.vs/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Eclipse
+.settings/
+.metadata/
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.loadpath
+.recommenders
+.externalToolBuilders/
+*.launch
+
+# NetBeans
+nbproject/
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+# ==================== BUILD & DEPLOY ====================
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Mypy cache
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# pytype static type analyzer
+.pytype/
+
+# profiling data
+.prof
+
+# ==================== TEMPORARY FILES ====================
+
+# Temporary files
+*.tmp
+*.temp
+temp/
+tmp/
+scratch/
+*.swp
+*.swo
+*~
+
+# Cache files
+.cache/
+.cache/*
+!*.cache/
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+.vscode/
+.idea/
+.rustup/
+.cargo/
+
+# ==================== DOCUMENTATION ====================
+
+# Sphinx
+docs/_build/
+
+# MkDocs
+site/
+
+# Jupyter Book
+_build/
+
+# ==================== NOTEBOOK CHECKPOINTS ====================
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ==================== LOGS ====================
+
+# Log files
+*.log
+logs/
+*.log.*
+log/
+*.logs
+debug.log
+error.log
+
+# ==================== WEB/FRONTEND ====================
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnp/
+.pnp.js
+.yarn/
+.yarnrc.yml
+.yarn/cache/
+.yarn/unplugged/
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.cjs
+.pnp.loader.mjs
+
+# Vue.js
+dist/
+
+# Next.js
+.next/
+out/
+
+# Nuxt.js
+.nuxt/
+
+# Gatsby
+.cache/
+public
+
+# Angular
+dist/
+tmp/
+.out-tsc/
+.aot/
+.angular/
+
+# Svelte
+.svelte-kit/
+
+# ==================== VERSION CONTROL ====================
+
+# Git
+.git-rewrite/
+.git/*
+!.git/HEAD
+!.git/config
+!.git/description
+!.git/hooks/
+!.git/info/
+!.git/objects/
+!.git/refs/
+.git/index
+.git/logs/
+.git/COMMIT_EDITMSG
+
+# Mercurial
+.hg/
+
+# SVN
+.svn/
+
+# ==================== MISC ====================
+
+# Compiled source
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+*.pyc
+
+# Packages
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ==================== PROJECT SPECIFIC EXTRAS ====================
+
+# Performance profiling outputs
+perf.data*
+perf-*.map
+perf-*.txt
+
+# Benchmark results
+benchmarks/
+*.bench
+*.benchmark
+
+# Configuration overrides
+config/override/
+config/local/
+
+# Virtual environments (alternative locations)
+venv*/
+env*/
+ENV*/
+virtualenv/
+
+# IDE specific (additional)
+.ropeproject
+.mtj.tmp/
+.hprof
+*.hprof
+
+# OS specific (additional)
+*.lnk
+
+# ==================== END ====================
