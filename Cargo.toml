@@ -1,0 +1,24 @@
+[package]
+name = "superdense_lob"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+name = "superdense_lob"
+# cdylib creates the .so file for Python
+# rlib creates the native Rust library for Criterion benchmarks
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+# abi3-py311 binds the memory layout specifically to your Python 3.11 environment
+pyo3 = { version = "0.20", features = ["extension-module", "abi3-py311"] }
+serde = { version = "1.0", features = ["derive"] }
+
+[dev-dependencies]
+criterion = "0.5"
+
+# Explicitly maps the benchmark harness so cargo knows what to execute
+[[bench]]
+name = "lob_benchmark"
+harness = false
+
